@@ -1,0 +1,93 @@
+html {
+  /* root font size - 16px but "10px" would be more easier to calculate */
+  /* rem - root em */
+  font-size: 62.5%;
+  /* okay now will convert px to rem */
+}
+
+@media (max-width: 46.8em) {
+  html {
+    /* font-size: 42.33869%; */
+    font-size: 62.5%;
+  }
+}
+
+/* > 2560px */
+@media (min-width: 160em) {
+  html {
+    font-size: 121.09365%;
+  }
+}
+/* only for 750px - 42px */
+@media only screen and (width: 46.875em) {
+  html {
+    font-size: 82.0312%;
+  }
+}
+@media (max-height: 75em) {
+  html {
+    font-size: 82.0312%;
+  }
+}
+/* pc */
+@media (max-height: 62.5em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-height: 40.625em) {
+  html {
+    font-size: 50%;
+  }
+}
+/* mobile */
+@media (min-height: 40.625em) and (max-width: 125em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/* @media (max-height: 40em) and (min-width: 18.75em) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-height: 56.25em) and (min-width: 23em) {
+  html {
+    font-size: 40%;
+  }
+} */
+
+@media (max-height: 56.25em) and (max-width: 46.875em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-height: 40em) and (max-width: 20em) {
+  html {
+    font-size: 30%;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
